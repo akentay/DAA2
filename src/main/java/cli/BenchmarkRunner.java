@@ -17,7 +17,7 @@ public class BenchmarkRunner {
         }
 
         CsvExporter exporter = new CsvExporter("docs/performance-plots/minheap_results.csv");
-        exporter.writeHeader("N","Comparisons","Swaps","ArrayAccesses","TimeMs");
+        exporter.writeHeader("N","Comparison","Swap","ArrayAccesses","TimeMs");
 
         for (int n : sizes) {
             runBenchmark(n, exporter);
