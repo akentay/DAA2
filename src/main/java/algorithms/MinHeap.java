@@ -27,6 +27,8 @@ public class MinHeap {
         size++;
     }
 
+
+
     public int extractMin() {
         if (size == 0) throw new IllegalStateException("Heap empty");
         int min = heap[0];
@@ -43,7 +45,7 @@ public class MinHeap {
      */
     public void decreaseKey(int index, int newValue) {
         if (index < 0 || index >= size) throw new IllegalArgumentException("Index out of bounds");
-        if (newValue > heap[index]) throw new IllegalArgumentException("newValue must be <= current value");
+        if (newValue > heap[index]) throw new IllegalArgumentException("newValue mus be <= current value");
         heap[index] = newValue;
         tracker.incArrayAccesses(1);
         heapifyUp(index);
