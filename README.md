@@ -75,3 +75,12 @@ Commit Example:
 - feat(optimization): improved heapifyDown performance
 - docs(readme): added usage and complexity analysis
 - release: v1.0 finalized
+
+<img width="800" height="600" alt="image1" src="https://github.com/user-attachments/assets/b02469db-6c7d-4c66-bc2f-2a02cd93f92f" />
+<img width="700" height="500" alt="image2" src="https://github.com/user-attachments/assets/c7fd2b50-91f4-4a73-8277-415692fae986" />
+<img width="700" height="500" alt="image3" src="https://github.com/user-attachments/assets/a5aec970-49d6-4fc0-800d-d9dd3bb80505" />
+<img width="700" height="500" alt="image5" src="https://github.com/user-attachments/assets/e246bef0-7ace-475f-86e7-6d0fbac944ef" />
+
+
+
+
