@@ -1,9 +1,5 @@
 package metrics;
 
-/**
- * Простая счётчик-утилита для метрик:
- * comparisons, swaps, arrayAccesses.
- */
 public class PerformanceTracker {
     private long comparisons = 0;
     private long swaps = 0;
@@ -22,6 +18,8 @@ public class PerformanceTracker {
         swaps = 0;
         arrayAccesses = 0;
     }
+
+    
 
     public String report() {
         return "Comparisons=" + comparisons + ", Swaps=" + swaps + ", ArrayAccesses=" + arrayAccesses;
