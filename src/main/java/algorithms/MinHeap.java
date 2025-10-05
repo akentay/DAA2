@@ -3,13 +3,6 @@ package algorithms;
 import metrics.PerformanceTracker;
 import java.util.Arrays;
 
-/**
- * Min-Heap implementation with:
- * - decreaseKey(index, newValue)
- * - merge(anotherHeap)
- * - dynamic resizing
- * Instrumented with PerformanceTracker (may be null).
- */
 public class MinHeap {
     private int[] heap;
     private int size;
@@ -34,8 +27,10 @@ public class MinHeap {
         size++;
     }
 
+
+
     public int extractMin() {
-        if (size == 0) throw new IllegalStateException("Heap is empty");
+        if (size == 0) throw new IllegalStateException("Heap empty");
         int min = heap[0];
         heap[0] = heap[size - 1];
         tracker.incArrayAccesses(1);
@@ -50,7 +45,7 @@ public class MinHeap {
      */
     public void decreaseKey(int index, int newValue) {
         if (index < 0 || index >= size) throw new IllegalArgumentException("Index out of bounds");
-        if (newValue > heap[index]) throw new IllegalArgumentException("newValue must be <= current value");
+        if (newValue > heap[index]) throw new IllegalArgumentException("newValue mus be <= current value");
         heap[index] = newValue;
         tracker.incArrayAccesses(1);
         heapifyUp(index);
